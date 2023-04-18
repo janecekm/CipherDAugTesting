@@ -1,0 +1,70 @@
+Namespace(no_progress_bar=False, log_interval=100, log_format=None, log_file=None, aim_repo=None, aim_run_hash=None, tensorboard_logdir=None, wandb_project=None, azureml_logging=False, seed=1, cpu=False, tpu=False, bf16=False, memory_efficient_bf16=False, fp16=False, memory_efficient_fp16=False, fp16_no_flatten_grads=False, fp16_init_scale=128, fp16_scale_window=None, fp16_scale_tolerance=0.0, on_cpu_convert_precision=False, min_loss_scale=0.0001, threshold_loss_scale=None, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, user_dir=None, empty_cache_freq=0, all_gather_list_size=16384, model_parallel_size=1, quantization_config_path=None, profile=False, reset_logging=False, suppress_crashes=False, use_plasma_view=False, plasma_path='/tmp/plasma', criterion='cross_entropy', tokenizer=None, bpe=None, optimizer=None, lr_scheduler='fixed', scoring='bleu', task='translation', source_lang='de', target_lang='en', trainpref='./data-bin/iwslt14/dex-en/bpe/train.bpe.de-en', validpref='./data-bin/iwslt14/dex-en/bpe/valid.bpe.de-en', testpref='./data-bin/iwslt14/dex-en/bpe/test.bpe.de-en', align_suffix=None, destdir='./data-bin/iwslt14/dex-en/bin', thresholdtgt=0, thresholdsrc=0, tgtdict='./data-bin/iwslt14/dex-en/bin/jointdict.txt', srcdict='./data-bin/iwslt14/dex-en/bin/jointdict.txt', nwordstgt=-1, nwordssrc=-1, alignfile=None, dataset_impl='mmap', joined_dictionary=False, only_source=False, padding_factor=8, workers=4, dict_only=False)
+[de] Dictionary: 16001 types
+[de] ./data-bin/iwslt14/dex-en/bpe/train.bpe.de-en.de: 160248 sents, 4236178 tokens, 0.0% replaced (by <unk>)
+[de] Dictionary: 16001 types
+[de] ./data-bin/iwslt14/dex-en/bpe/valid.bpe.de-en.de: 7283 sents, 191839 tokens, 0.0% replaced (by <unk>)
+[de] Dictionary: 16001 types
+[de] ./data-bin/iwslt14/dex-en/bpe/test.bpe.de-en.de: 6750 sents, 169955 tokens, 0.0265% replaced (by <unk>)
+[en] Dictionary: 16001 types
+[en] ./data-bin/iwslt14/dex-en/bpe/train.bpe.de-en.en: 160248 sents, 4164787 tokens, 2.4e-05% replaced (by <unk>)
+[en] Dictionary: 16001 types
+[en] ./data-bin/iwslt14/dex-en/bpe/valid.bpe.de-en.en: 7283 sents, 188465 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 16001 types
+[en] ./data-bin/iwslt14/dex-en/bpe/test.bpe.de-en.en: 6750 sents, 165722 tokens, 0.00302% replaced (by <unk>)
+Wrote preprocessed data to ./data-bin/iwslt14/dex-en/bin
+Namespace(no_progress_bar=False, log_interval=100, log_format=None, log_file=None, aim_repo=None, aim_run_hash=None, tensorboard_logdir=None, wandb_project=None, azureml_logging=False, seed=1, cpu=False, tpu=False, bf16=False, memory_efficient_bf16=False, fp16=False, memory_efficient_fp16=False, fp16_no_flatten_grads=False, fp16_init_scale=128, fp16_scale_window=None, fp16_scale_tolerance=0.0, on_cpu_convert_precision=False, min_loss_scale=0.0001, threshold_loss_scale=None, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, user_dir=None, empty_cache_freq=0, all_gather_list_size=16384, model_parallel_size=1, quantization_config_path=None, profile=False, reset_logging=False, suppress_crashes=False, use_plasma_view=False, plasma_path='/tmp/plasma', criterion='cross_entropy', tokenizer=None, bpe=None, optimizer=None, lr_scheduler='fixed', scoring='bleu', task='translation', source_lang='de1', target_lang='en', trainpref='./data-bin/iwslt14/dex-en/bpe/train.bpe.de1-en', validpref='./data-bin/iwslt14/dex-en/bpe/valid.bpe.de1-en', testpref='./data-bin/iwslt14/dex-en/bpe/test.bpe.de1-en', align_suffix=None, destdir='./data-bin/iwslt14/dex-en/bin', thresholdtgt=0, thresholdsrc=0, tgtdict='./data-bin/iwslt14/dex-en/bin/jointdict.txt', srcdict='./data-bin/iwslt14/dex-en/bin/jointdict.txt', nwordstgt=-1, nwordssrc=-1, alignfile=None, dataset_impl='mmap', joined_dictionary=False, only_source=False, padding_factor=8, workers=4, dict_only=False)
+[de1] Dictionary: 16001 types
+[de1] ./data-bin/iwslt14/dex-en/bpe/train.bpe.de1-en.de1: 160248 sents, 4323977 tokens, 0.0% replaced (by <unk>)
+[de1] Dictionary: 16001 types
+[de1] ./data-bin/iwslt14/dex-en/bpe/valid.bpe.de1-en.de1: 7283 sents, 195706 tokens, 0.0% replaced (by <unk>)
+[de1] Dictionary: 16001 types
+[de1] ./data-bin/iwslt14/dex-en/bpe/test.bpe.de1-en.de1: 6750 sents, 172972 tokens, 0.026% replaced (by <unk>)
+[en] Dictionary: 16001 types
+[en] ./data-bin/iwslt14/dex-en/bpe/train.bpe.de1-en.en: 160248 sents, 4164787 tokens, 2.4e-05% replaced (by <unk>)
+[en] Dictionary: 16001 types
+[en] ./data-bin/iwslt14/dex-en/bpe/valid.bpe.de1-en.en: 7283 sents, 188465 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 16001 types
+[en] ./data-bin/iwslt14/dex-en/bpe/test.bpe.de1-en.en: 6750 sents, 165722 tokens, 0.00302% replaced (by <unk>)
+Wrote preprocessed data to ./data-bin/iwslt14/dex-en/bin
+Namespace(no_progress_bar=False, log_interval=100, log_format=None, log_file=None, aim_repo=None, aim_run_hash=None, tensorboard_logdir=None, wandb_project=None, azureml_logging=False, seed=1, cpu=False, tpu=False, bf16=False, memory_efficient_bf16=False, fp16=False, memory_efficient_fp16=False, fp16_no_flatten_grads=False, fp16_init_scale=128, fp16_scale_window=None, fp16_scale_tolerance=0.0, on_cpu_convert_precision=False, min_loss_scale=0.0001, threshold_loss_scale=None, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, user_dir=None, empty_cache_freq=0, all_gather_list_size=16384, model_parallel_size=1, quantization_config_path=None, profile=False, reset_logging=False, suppress_crashes=False, use_plasma_view=False, plasma_path='/tmp/plasma', criterion='cross_entropy', tokenizer=None, bpe=None, optimizer=None, lr_scheduler='fixed', scoring='bleu', task='translation', source_lang='de1', target_lang='de', trainpref='./data-bin/iwslt14/dex-en/bpe/train.bpe.de1-de', validpref='./data-bin/iwslt14/dex-en/bpe/valid.bpe.de1-de', testpref='./data-bin/iwslt14/dex-en/bpe/test.bpe.de1-de', align_suffix=None, destdir='./data-bin/iwslt14/dex-en/bin', thresholdtgt=0, thresholdsrc=0, tgtdict='./data-bin/iwslt14/dex-en/bin/jointdict.txt', srcdict='./data-bin/iwslt14/dex-en/bin/jointdict.txt', nwordstgt=-1, nwordssrc=-1, alignfile=None, dataset_impl='mmap', joined_dictionary=False, only_source=False, padding_factor=8, workers=4, dict_only=False)
+[de1] Dictionary: 16001 types
+[de1] ./data-bin/iwslt14/dex-en/bpe/train.bpe.de1-de.de1: 160248 sents, 4323977 tokens, 0.0% replaced (by <unk>)
+[de1] Dictionary: 16001 types
+[de1] ./data-bin/iwslt14/dex-en/bpe/valid.bpe.de1-de.de1: 7283 sents, 195706 tokens, 0.0% replaced (by <unk>)
+[de1] Dictionary: 16001 types
+[de1] ./data-bin/iwslt14/dex-en/bpe/test.bpe.de1-de.de1: 6750 sents, 172972 tokens, 0.026% replaced (by <unk>)
+[de] Dictionary: 16001 types
+[de] ./data-bin/iwslt14/dex-en/bpe/train.bpe.de1-de.de: 160248 sents, 4236178 tokens, 0.0% replaced (by <unk>)
+[de] Dictionary: 16001 types
+[de] ./data-bin/iwslt14/dex-en/bpe/valid.bpe.de1-de.de: 7283 sents, 191839 tokens, 0.0% replaced (by <unk>)
+[de] Dictionary: 16001 types
+[de] ./data-bin/iwslt14/dex-en/bpe/test.bpe.de1-de.de: 6750 sents, 169955 tokens, 0.0265% replaced (by <unk>)
+Wrote preprocessed data to ./data-bin/iwslt14/dex-en/bin
+Namespace(no_progress_bar=False, log_interval=100, log_format=None, log_file=None, aim_repo=None, aim_run_hash=None, tensorboard_logdir=None, wandb_project=None, azureml_logging=False, seed=1, cpu=False, tpu=False, bf16=False, memory_efficient_bf16=False, fp16=False, memory_efficient_fp16=False, fp16_no_flatten_grads=False, fp16_init_scale=128, fp16_scale_window=None, fp16_scale_tolerance=0.0, on_cpu_convert_precision=False, min_loss_scale=0.0001, threshold_loss_scale=None, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, user_dir=None, empty_cache_freq=0, all_gather_list_size=16384, model_parallel_size=1, quantization_config_path=None, profile=False, reset_logging=False, suppress_crashes=False, use_plasma_view=False, plasma_path='/tmp/plasma', criterion='cross_entropy', tokenizer=None, bpe=None, optimizer=None, lr_scheduler='fixed', scoring='bleu', task='translation', source_lang='de2', target_lang='en', trainpref='./data-bin/iwslt14/dex-en/bpe/train.bpe.de2-en', validpref='./data-bin/iwslt14/dex-en/bpe/valid.bpe.de2-en', testpref='./data-bin/iwslt14/dex-en/bpe/test.bpe.de2-en', align_suffix=None, destdir='./data-bin/iwslt14/dex-en/bin', thresholdtgt=0, thresholdsrc=0, tgtdict='./data-bin/iwslt14/dex-en/bin/jointdict.txt', srcdict='./data-bin/iwslt14/dex-en/bin/jointdict.txt', nwordstgt=-1, nwordssrc=-1, alignfile=None, dataset_impl='mmap', joined_dictionary=False, only_source=False, padding_factor=8, workers=4, dict_only=False)
+[de2] Dictionary: 16001 types
+[de2] ./data-bin/iwslt14/dex-en/bpe/train.bpe.de2-en.de2: 160248 sents, 4322918 tokens, 0.0% replaced (by <unk>)
+[de2] Dictionary: 16001 types
+[de2] ./data-bin/iwslt14/dex-en/bpe/valid.bpe.de2-en.de2: 7283 sents, 195875 tokens, 0.0% replaced (by <unk>)
+[de2] Dictionary: 16001 types
+[de2] ./data-bin/iwslt14/dex-en/bpe/test.bpe.de2-en.de2: 6750 sents, 173010 tokens, 0.026% replaced (by <unk>)
+[en] Dictionary: 16001 types
+[en] ./data-bin/iwslt14/dex-en/bpe/train.bpe.de2-en.en: 160248 sents, 4164787 tokens, 2.4e-05% replaced (by <unk>)
+[en] Dictionary: 16001 types
+[en] ./data-bin/iwslt14/dex-en/bpe/valid.bpe.de2-en.en: 7283 sents, 188465 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 16001 types
+[en] ./data-bin/iwslt14/dex-en/bpe/test.bpe.de2-en.en: 6750 sents, 165722 tokens, 0.00302% replaced (by <unk>)
+Wrote preprocessed data to ./data-bin/iwslt14/dex-en/bin
+Namespace(no_progress_bar=False, log_interval=100, log_format=None, log_file=None, aim_repo=None, aim_run_hash=None, tensorboard_logdir=None, wandb_project=None, azureml_logging=False, seed=1, cpu=False, tpu=False, bf16=False, memory_efficient_bf16=False, fp16=False, memory_efficient_fp16=False, fp16_no_flatten_grads=False, fp16_init_scale=128, fp16_scale_window=None, fp16_scale_tolerance=0.0, on_cpu_convert_precision=False, min_loss_scale=0.0001, threshold_loss_scale=None, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, user_dir=None, empty_cache_freq=0, all_gather_list_size=16384, model_parallel_size=1, quantization_config_path=None, profile=False, reset_logging=False, suppress_crashes=False, use_plasma_view=False, plasma_path='/tmp/plasma', criterion='cross_entropy', tokenizer=None, bpe=None, optimizer=None, lr_scheduler='fixed', scoring='bleu', task='translation', source_lang='de2', target_lang='de', trainpref='./data-bin/iwslt14/dex-en/bpe/train.bpe.de2-de', validpref='./data-bin/iwslt14/dex-en/bpe/valid.bpe.de2-de', testpref='./data-bin/iwslt14/dex-en/bpe/test.bpe.de2-de', align_suffix=None, destdir='./data-bin/iwslt14/dex-en/bin', thresholdtgt=0, thresholdsrc=0, tgtdict='./data-bin/iwslt14/dex-en/bin/jointdict.txt', srcdict='./data-bin/iwslt14/dex-en/bin/jointdict.txt', nwordstgt=-1, nwordssrc=-1, alignfile=None, dataset_impl='mmap', joined_dictionary=False, only_source=False, padding_factor=8, workers=4, dict_only=False)
+[de2] Dictionary: 16001 types
+[de2] ./data-bin/iwslt14/dex-en/bpe/train.bpe.de2-de.de2: 160248 sents, 4322918 tokens, 0.0% replaced (by <unk>)
+[de2] Dictionary: 16001 types
+[de2] ./data-bin/iwslt14/dex-en/bpe/valid.bpe.de2-de.de2: 7283 sents, 195875 tokens, 0.0% replaced (by <unk>)
+[de2] Dictionary: 16001 types
+[de2] ./data-bin/iwslt14/dex-en/bpe/test.bpe.de2-de.de2: 6750 sents, 173010 tokens, 0.026% replaced (by <unk>)
+[de] Dictionary: 16001 types
+[de] ./data-bin/iwslt14/dex-en/bpe/train.bpe.de2-de.de: 160248 sents, 4236178 tokens, 0.0% replaced (by <unk>)
+[de] Dictionary: 16001 types
+[de] ./data-bin/iwslt14/dex-en/bpe/valid.bpe.de2-de.de: 7283 sents, 191839 tokens, 0.0% replaced (by <unk>)
+[de] Dictionary: 16001 types
+[de] ./data-bin/iwslt14/dex-en/bpe/test.bpe.de2-de.de: 6750 sents, 169955 tokens, 0.0265% replaced (by <unk>)
+Wrote preprocessed data to ./data-bin/iwslt14/dex-en/bin
