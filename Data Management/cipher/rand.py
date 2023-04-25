@@ -100,7 +100,7 @@ def monophonic(plain_txt: str, all_letters: list, shifted_letters: dict):
     cipher_txt = []
     for char in plain_txt:
         if char in shifted_letters:
-            temp = shifted_letters[random.randint(0, len(shifted_letters)-1)]
+            temp = random.choice(list(shifted_letters.values()))
             cipher_txt.append(temp)
         else:
             temp = char
