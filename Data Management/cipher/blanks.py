@@ -95,7 +95,17 @@ def monophonic(plain_txt: str, all_letters: list, shifted_letters: dict):
     enciphers a line of plaintext with monophonic shift (rot-key) cipher
     i.e. number of unique chars across plaintext and ciphertext remains conserved
     """
-    return " "
+    cipher_txt = []
+    for char in plain_txt:
+        if char in all_letters:
+            temp = shifted_letters[char]
+            cipher_txt.append("_")
+        else:
+            temp = char
+            cipher_txt.append(temp)
+
+    cipher_txt = "".join(cipher_txt)
+    return cipher_txt
 
 
 # non tested
