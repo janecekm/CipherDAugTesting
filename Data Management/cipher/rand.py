@@ -1,7 +1,6 @@
 import string
 import random
 from collections import Counter
-random.seed(42)
 
 
 import argparse
@@ -98,9 +97,12 @@ def monophonic(plain_txt: str, all_letters: list, shifted_letters: dict):
     i.e. number of unique chars across plaintext and ciphertext remains conserved
     """
     cipher_txt = []
+	l = list(shifted_letters.values())
+	num = len(l)
     for char in plain_txt:
         if char in shifted_letters:
-            temp = random.choice(list(shifted_letters.values()))
+			
+            temp = l[random.randint(0, num-1)]
             cipher_txt.append(temp)
         else:
             temp = char
