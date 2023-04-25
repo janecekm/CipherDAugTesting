@@ -97,8 +97,8 @@ def monophonic(plain_txt: str, all_letters: list, shifted_letters: dict):
     i.e. number of unique chars across plaintext and ciphertext remains conserved
     """
     cipher_txt = []
-	l = list(shifted_letters.values())
-	num = len(l)
+    l = list(shifted_letters.values())
+    num = len(l)
     for char in plain_txt:
         if char in shifted_letters:
 			
