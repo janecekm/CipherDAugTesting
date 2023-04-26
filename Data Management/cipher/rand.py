@@ -97,12 +97,12 @@ def monophonic(plain_txt: str, all_letters: list, shifted_letters: dict):
     i.e. number of unique chars across plaintext and ciphertext remains conserved
     """
     cipher_txt = []
-    l = list(shifted_letters.values())
+    l = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     num = len(l)
     for char in plain_txt:
         if char in shifted_letters:
 			
-            temp = l[random.randint(0, num-1)]
+            temp = random.choice(l)
             cipher_txt.append(temp)
         else:
             temp = char
