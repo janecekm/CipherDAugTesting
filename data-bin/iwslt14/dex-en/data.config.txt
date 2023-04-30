@@ -1,1 +1,0 @@
-SRCS = de | TGTS = en | CIPHER_LANGS = dex | CIPHER_SRCS = de1 de2 | CIPHER_TGTS = de en | PRIMARY_SRC = de | DEST_DIR = ./data-bin/iwslt14/dex-en | BPESIZE = 16000
