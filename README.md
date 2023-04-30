@@ -1,5 +1,2 @@
 # CipherDAugTesting
-
-[Reference Code](https://github.com/protonish/cipherdaug-nmt)
-
-[Reference Paper](https://aclanthology.org/2022.acl-long.17/)
+This repository contains the code necessary to recreate the experiments described in [this report](https://github.com/janecekm/CipherDAugTesting/tree/main/report.pdf), which is an in-depth analysis of the model descibed in [CipherDAug: Ciphertext based Data Augmentation for Neural Machine Translation](https://aclanthology.org/2022.acl-long.17/). For any of the data types, one just needs to clone the [original code](https://github.com/protonish/cipherdaug-nmt), replace **encipher.sh** with the appropriate bash script (described [here](https://github.com/janecekm/CipherDAugTesting/tree/main/Data%20Management)), and include the corresponding [python code](https://github.com/janecekm/CipherDAugTesting/tree/main/Data%20Management/cipher) in the **cipher** folder. 
